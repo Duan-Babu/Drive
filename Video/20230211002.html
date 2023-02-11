@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
+    <meta name="referrer" content="no-referrer">
+    <title>🎬 𝘽𝙖𝙗𝙪 分享的视频</title>
+    <style type="text/css">
+      html, body {width:100%;height:100%;margin:auto;overflow: hidden;}
+      body {display:flex;}
+      #mse {flex:auto;}
+    </style>
+    <script type="text/javascript">
+      window.addEventListener('resize',function(){document.getElementById('mse').style.height=window.innerHeight+'px';});
+    </script>
+  </head>
+  <body>
+    <div id="mse"></div>
+    <script src="https://unpkg.byted-static.com/xgplayer/2.31.2/browser/index.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+      let player=new Player({
+        id: 'mse',
+        autoplay: true,
+        volume: 0.6,
+        url:'https://aweme.snssdk.com/aweme/v1/play/?video_id=v0200fg10000cfjj5irc77ub67jtskdg&ratio=1080p&line=0',
+        poster: "",
+        playsinline: true,
+        thumbnail: {
+            pic_num: 44,
+            width: 160,
+            height: 90,
+            col: 10,
+            row: 10,
+            urls: [''],
+        },
+        danmu: {
+          comments: [
+            {
+              duration: 15000,
+              id: '1',
+              start: 1000,
+              txt: '当前网站正在搭建中，可能出现短时间无法访问，尽情谅解！',
+              style: {  //弹幕自定义样式
+                color: '#ff9500',
+                fontSize: '20px',
+                border: 'solid 1px #ff9500',
+                borderRadius: '50px',
+                padding: '5px 11px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)'
+              }
+            },
+            {
+              duration: 15000,
+              id: '2',
+              start: 2000,
+              txt: '如果遇到无法访问，请重新刷新网页或告诉站长~',
+              style: {  //弹幕自定义样式
+                color: '#ff9500',
+                fontSize: '20px',
+                border: 'solid 1px #ff9500',
+                borderRadius: '50px',
+                padding: '5px 11px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)'
+              }
+            },
+            {
+              duration: 15000,
+              id: '3',
+              start: 3000,
+              txt: '祝您观影愉快！',
+              style: {  //弹幕自定义样式
+                color: '#ff9500',
+                fontSize: '20px',
+                border: 'solid 1px #ff9500',
+                borderRadius: '50px',
+                padding: '5px 11px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)'
+              }
+            }
+          ],
+          area: {
+            start: 0,
+            end: 1
+          }
+        },
+        height: window.innerHeight,
+        width: window.innerWidth,
+        whitelist: ['']
+      });
+      player.emit('resourceReady', [{ name: '蓝光', url: 'https://aweme.snssdk.com/aweme/v1/play/?video_id=v0200fg10000cfjj5irc77ub67jtskdg&ratio=1080p&line=0'}]);
+    </script>
+  </body>
+</html>
