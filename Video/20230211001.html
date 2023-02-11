@@ -49,6 +49,34 @@
                 padding: '5px 11px',
                 backgroundColor: 'rgba(255, 255, 255, 0.1)'
               }
+            },
+            {
+              duration: 15000,
+              id: '2',
+              start: 2000,
+              txt: '如果遇到无法访问，请重新刷新网页或告诉站长~',
+              style: {  //弹幕自定义样式
+                color: '#ff9500',
+                fontSize: '20px',
+                border: 'solid 1px #ff9500',
+                borderRadius: '50px',
+                padding: '5px 11px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)'
+              }
+            },
+            {
+              duration: 15000,
+              id: '3',
+              start: 3000,
+              txt: '祝您观影愉快！',
+              style: {  //弹幕自定义样式
+                color: '#ff9500',
+                fontSize: '20px',
+                border: 'solid 1px #ff9500',
+                borderRadius: '50px',
+                padding: '5px 11px',
+                backgroundColor: 'rgba(255, 255, 255, 0.1)'
+              }
             }
           ],
           area: {
@@ -60,7 +88,7 @@
         width: window.innerWidth,
         whitelist: ['']
       });
-      player.emit('resourceReady', [{ name: '4K 60FPS', url: 'https://aweme.snssdk.com/aweme/v1/play/?video_id=v0200fg10000cfjgfjrc77u2moojpnl0&ratio=1080p&line=0'}]);
+      player.emit('resourceReady', [{ name: '蓝光', url: 'https://aweme.snssdk.com/aweme/v1/play/?video_id=v0200fg10000cfjgfjrc77u2moojpnl0&ratio=1080p&line=0'}]);
     </script>
   </body>
 </html>
