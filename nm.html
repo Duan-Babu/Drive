@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>noMeiryoUI.exe-文件提取</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+ 
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      margin-bottom: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+      width: 300px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s ease-in-out;
+    }
+
+    form input[type="text"]:focus,
+    form input[type="password"]:focus {
+      border-color: #3b89fc;
+    }
+
+    form button {
+      padding: 10px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3b89fc;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #265da4;
+    }
+
+    .output {
+      display: none;
+      margin-top: 20px;
+      max-width: 500px;
+      padding: 20px;
+      border: 2px solid #3b89fc;
+      border-radius: 5px;
+      background-color: #fff;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      white-space: pre-line;
+      word-wrap: break-word;
+    }
+
+    .output button {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #3b89fc;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="form">
+        <h2>📂 文件提取</h2>
+        <p>Babu 向您共享了一个文件</p>
+        <p>noMeiryoUI.exe</p>
+        <br>
+        <button onclick="window.location.href='https://drive201.netlify.app/File/noMeiryoUI.exe'">下载</button>
+    </form>
+  </div>
+</body>
+</html>
