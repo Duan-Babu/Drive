@@ -18,19 +18,10 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line
 .progress-bar{float:left;width:0%;height:100%;font-size:12px;line-height:20px;color:#fff;text-align:center;background-color:#337ab7;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,.15);-webkit-transition:width .6s ease;-o-transition:width .6s ease;transition:width .6s ease}
 .progress-bar-success{background-color:#414040}
 </style>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-  integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
-  crossorigin="anonymous"
-/>
+<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 
 <!-- MDUI JavaScript -->
-<script
-  src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-  crossorigin="anonymous"
-></script>
+<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 </head>
 <body
   class="
@@ -60,7 +51,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line
       <i class="mdui-icon material-icons">color_lens</i>
     </span>
     <a
-      href="https://github.com/duan-babu/"
+      href="https://github.com/zdhxiong/mdui"
       target="_blank"
       class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
       mdui-tooltip="{content: '查看 Github'}"
@@ -127,7 +118,7 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line
           <div class="mdui-card-header">
             <img class="mdui-card-header-avatar" src="https://q1.qlogo.cn/g?b=qq&nk=3552876629&s=640"/>
             <div class="mdui-card-header-title">文章推荐</div>
-            <div class="mdui-card-header-subtitle">Babu</div>
+            <div class="mdui-card-header-subtitle">Bbau</div>
           </div>
           <div class="mdui-card-media">
             <img src="https://duan-babu.netlify.app/assets/images/WenZhang_L.jpg"/>
@@ -148,7 +139,8 @@ body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line
 </div>
 <script>
 var url='https://otp.landian.vip/redirect/download.php?type=runtime&site=sdumirror';
-window.location.href=url;
+function progress(p){document.getElementById("progress-bar").style.width=p+"%"}
+setTimeout(function(){progress("5");setTimeout(function(){progress("60");setTimeout(function(){progress("95");window.location.href=url;},600);},800);},300);
 </script>
 </body>
 <script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script><script src="https://cdn.w3cbus.com/mdui/docs~1/static/index.74ecf734.js"></script>
